@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  background-color: #07071D;
+  color: #E3E3E8;
+  font-family: 'Inter';
+}
+
+
+.center-everything {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#navigation-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 712px;
+  margin-bottom: 100px;
+  font-size: 64px;
+}
+
+#title-sub {
+  flex-direction: column;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+#title {
+  margin: 0px;
+  font-size: 50px;
+}
+
+.subtitle {
+  margin: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+
+form{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#numstyle{
+  width: 250px;
+  border-radius: 5px;
+  height: 26px;
+}
+
+#generateStyle {
+  width:89px;
+  border-radius:5px;
+  border:0; 
+  background-color:#161632;
+  color:white;
+}
+
+#blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: start;
+  column-gap: 32px;
+  row-gap: 24px;
+  padding: 0px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+article * {
+  margin: 0px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.card-content .title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-content .date {
+  font-size: 16px;
+}
+
+
+/* .card-content .summary {
+  font-size: 15px;
+} */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
