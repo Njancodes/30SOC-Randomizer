@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     randomCards(Number.parseInt(req.query.number), (err, data) => {
         if (err) console.error(err);
         res.json(data);
@@ -17,3 +17,5 @@ app.get('/', (req, res) => {
 app.listen(3001, () => {
     console.log("Listening on http://localhost:3001");
 })
+
+export default app; 

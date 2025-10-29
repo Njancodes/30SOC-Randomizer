@@ -15,7 +15,7 @@ function App() {
 
     axios({
       method: "get",
-      url: `http://localhost:3001/?number=${number}`
+      url: `/api/?number=${number}`
     }).then((res) => {
       console.log(res.data)
       setCards(res.data)
