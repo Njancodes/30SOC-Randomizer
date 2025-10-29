@@ -43,29 +43,29 @@ body {
 }
 
 
-form{
+#input-eles {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-#numstyle{
+#numstyle {
   width: 250px;
   border-radius: 5px;
   height: 26px;
 }
 
 #generateStyle {
-  width:89px;
-  border-radius:5px;
-  border:0; 
-  background-color:#161632;
-  color:white;
+  width: 89px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #161632;
+  color: white;
 }
 
 #blog-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: 400px 400px;
   align-items: start;
   column-gap: 32px;
   row-gap: 24px;
@@ -74,16 +74,31 @@ form{
 
 img {
   border-radius: 10px;
+  flex: auto 0 400px;
 }
 
 article * {
   margin: 0px;
 }
 
+.card-content a::before {
+  inset: 0;
+  content: "";
+  position: absolute;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .card-content {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-content .title {
@@ -103,5 +118,6 @@ article * {
 .card {
   display: flex;
   flex-direction: column;
+  position: relative;
   row-gap: 10px;
 }
